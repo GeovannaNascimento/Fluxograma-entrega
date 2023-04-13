@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+
+    <head>
+        <script>
+            function main() {
+                var user;
+                var password;
+                var recorrente;
+
+                recorrente = true;
+                do {
+                    window.alert("Digite o seu nome de usuário!");
+                    user = window.prompt('Enter a value for user');
+                    window.alert("Digite sua senha!");
+                    password = window.prompt('Enter a value for password');
+                    if (user == "Geovanna") {
+                        if (password == "123") {
+                            window.alert("Você será redirecionado ao seu perfil.");
+                            recorrente = false;
+                        } else {
+                            window.alert("Usuário ou senha inválido.");
+                        }
+                    } else {
+                        window.alert("Usuário ou senha inválido.");
+                    }
+                } while (recorrente == true);
+            }
+
+
+        </script>
+
+
+        <script>
+            function main() {
+                var user;
+                var password;
+                var recorrente;
+
+                recorrente = true;
+                while (recorrente) {
+                    window.alert("Digite o seu nome de usuário:");
+                    user = window.prompt('Enter a value for user');
+                    window.alert("Digite sua senha:");
+                    password = window.prompt('Enter a value for password');
+                    if (user == "Geovanna") {
+                        if (password == "123") {
+                            window.alert("Você será redirecionado ao seu perfil");
+                            recorrente = false;
+                        } else {
+                            window.alert("Usuário ou senha inválidos");
+                        }
+                    } else {
+                        window.alert("Usuário ou senha inválidos");
+                    }
+                }
+            }
+
+
+        </script>
+    </head>
+
+
+    <div>
+        <input type="text" placeholder="Nome">
+    </div>
+
+
+    <div>
+        <input type="password" placeholder="Senha">
+    </div>
+
+
+    <div>
+        <button onclick="main()">Enquanto</button>
+    </div>
+
+
+    <div>
+        <button onclick="main()">Faça</button>
+    </div>
+
+</body>
+
+
+</html>
